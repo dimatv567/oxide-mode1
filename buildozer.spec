@@ -25,3 +25,11 @@ orientation = landscape
 
 # Архитектура процессора
 android.archs = arm64-v8a, armeabi-v7a
+# Автоматическое принятие лицензий Android SDK
+android.accept_sdk_license = True
+
+# Укажем стабильные версии API и Android-инструментов, чтобы Buildozer не пытался ставить экспериментальные
+android.api = 31
+android.min_api = 21
+android.sdk = 31
+android.ndk = 23b
