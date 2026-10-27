@@ -1,7 +1,7 @@
 [app]
 
 # Название вашего приложения
-title = Oxide Mod Menu
+title = Oxide Mod Menu 
 
 # Имя пакета (должно быть уникальным)
 package.name = oxidemod
