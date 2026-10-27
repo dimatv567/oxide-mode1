@@ -1,31 +1,27 @@
 [app]
 
-# Название вашего приложения
-title = Oxide Mod Menu 
+# Название приложения
+title = Oxide Mod Menu
 
-# Имя пакета (должно быть уникальным)
+# Имя пакета
 package.name = oxidemod
-
-# Домен пакета
 package.domain = org.mod
 
-# Все файлы вашего проекта, которые нужно включить (через запятую)
+# Путь к исходным файлам (точка означает текущую корневую папку)
+source.dir = .
+
+# Расширения файлов проекта
 source.include_exts = py,png,jpg,kv,atlas
 
-# Главный файл приложения
+# Главный файл
 source.main_file = main.py
 
-# Список используемых библиотек (например, python3, kivy и т.д.)
+# Зависимости
 requirements = python3,kivy
 
-# Версия приложения
+# Версия и ориентация
 version = 0.1
-
-# Ориентация экрана (landscape — альбомная, так как это игра)
 orientation = landscape
 
-# Поддерживаемые архитектуры процессоров
+# Архитектура процессора
 android.archs = arm64-v8a, armeabi-v7a
-
-# Разрешения (если модулю нужны права, например интернет)
-# android.permissions = INTERNET
