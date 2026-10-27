@@ -11,6 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Remove preinstalled Conda to prevent conflicts
+      run: |
+        sudo rm -rf /usr/share/miniconda
+        echo "Conda removed successfully"
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
