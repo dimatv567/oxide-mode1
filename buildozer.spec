@@ -16,8 +16,7 @@ orientation = landscape
 android.archs = arm64-v8a, armeabi-v7a
 android.accept_sdk_license = True
 
+# Используем только актуальные параметры API (без устаревшего android.sdk)
 android.api = 31
 android.min_api = 21
-android.sdk = 31
 android.ndk = 23b
-
