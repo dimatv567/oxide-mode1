@@ -16,7 +16,6 @@ jobs:
         sudo rm -rf /usr/share/miniconda
         sudo rm -rf /opt/conda
         echo "CONDA=" >> $GITHUB_ENV
-        echo "Conda completely removed"
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,6 +29,10 @@ jobs:
         pip install --upgrade pip
         pip install --upgrade buildozer cython==0.29.33 setuptools==65.5.0
 
+    - name: Clear old Buildozer cache
+      run: |
+        rm -rf .buildozer
+
     - name: Build with Buildozer
       run: buildozer -v android debug
 
@@ -38,4 +41,5 @@ jobs:
       with:
         name: package
         path: bin/*.apk
+        
         
