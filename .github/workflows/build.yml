@@ -14,7 +14,8 @@ jobs:
     - name: Remove preinstalled Conda to prevent conflicts
       run: |
         sudo rm -rf /usr/share/miniconda
-        echo "Conda removed successfully"
+        sudo rm -rf /opt/conda
+        echo "Conda completely removed"
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -36,4 +37,5 @@ jobs:
       with:
         name: package
         path: bin/*.apk
+        
         
