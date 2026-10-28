@@ -19,4 +19,5 @@ android.accept_sdk_license = True
 # Используем только актуальные параметры API (без устаревшего android.sdk)
 android.api = 31
 android.min_api = 21
-android.ndk = 23b
+android.ndk = 25b
+
