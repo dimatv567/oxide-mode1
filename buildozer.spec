@@ -16,8 +16,10 @@ orientation = landscape
 android.archs = arm64-v8a, armeabi-v7a
 android.accept_sdk_license = True
 
-# Используем только актуальные параметры API (без устаревшего android.sdk)
-android.api = 31
+android.api = 33
 android.min_api = 21
 android.ndk = 25b
 
+# Принудительно указываем локальные папки для скачивания чистых компонентов
+android.sdk_path = .buildozer/android/platform/android-sdk
+android.ndk_path = .buildozer/android/platform/android-ndk-r25b
