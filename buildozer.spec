@@ -1,4 +1,4 @@
-[app]
+[app] 
 
 title = Oxide Mod Menu
 package.name = oxidemod
